@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Software Engineering Project</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/b0cb552013.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="first-container" id="firstContainer">
+        <header>
+            <img src="images/logo.png" alt="logo" style="width:50px">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="main.php" id="backtoMainpage">Back to the Main Page</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="form-container">
+            <div class="user-image">
+                <img src="images/username.png" alt="">
+            </div>
+
+            <div class="user-form">
+                <form action="#" method="POST">
+                    <div class="username-form">
+                        <label>Username</label>
+                        <input type="text" name="username" placeholder="Enter username">
+                        <span class="invalid-feedback"></span>
+                    </div>
+                    <div class="username-password">
+                        <label style="font-size:30px;">Password</label>
+                        <input type="password" name="password" id="passwordinput" placeholder="Enter password">
+                    </div>
+
+                    <div>
+                        <input type="checkbox" style="height:15px; width:20px;" onclick=myFunction();>
+                        <p style="font-size:15px;" id="showPassword">Show Password</p>
+                    </div>
+
+
+                    <button type="submit" id="submit">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <header>
+        <img src="images/logo.png" alt="logo" style="width:50px">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#aboutus" id="aboutUs">About Us</a></li>
+                <li onclick="loginForm()"><a href="#" class="navbar-links" id="login">Login</a></li>
+                <li><a href="booking_system.php" class="navbar-links" id="bookAReservation">Book A Reservation</a></li>
+            </ul>
+        </nav>
+        <select id="language-selector" class="form-select form-select-sm mb-3" style="width: 180px;" aria-label=".form-select-sm example">
+            <option selected>Choose the language you prefer</option>
+            <option value="en">English</option>
+            <option value="al">Albanian</option>
+            <option value="it">Italian</option>
+        </select>
+        <a class="cta" href="#"><button id="contact-us">Contact Us</button></a>
+    </header>
+    <div class="front-page">
+        <div class="top-container">
+            <i class="fa-regular fa-heart"></i>
+            <h1 class="first-heading" id="commited-to-you">Commited to You</h1>
+            <span class="first-subtext" id="east-forge">East Forge Medical is the region's most trusted provider of women's healthcare.
+                We have a highly trained team of medical experts, advanced facilities, and unwavering commitment to the welfare of our patients.</span>
+
+            <span class="learn-more" onclick="learnmore()">Learn More</span>
+        </div>
+    </div>
+
+    <div class="middle-page">
+        <div class="middle-container">
+            <img class="image-container" src="images/doctor.png" alt="doctor">
+
+            <div class="text-container">
+                <span class="text-container-title" id="healthier-place">Making the World A Healthier, Happier Place</span>
+                <span class="text" id="history">Established in 1990, East Forge Hospital is one of the most trust-worthy and professional hospital
+                    you can find in Albania. With our exceptional team, we will make your experience whilst visiting us, a true worry-free
+                    vacation of yours. You just need to come to us!
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="languagechange.js"></script>
+</body>
+
+</html>
